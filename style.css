@@ -13,7 +13,7 @@ body {
 
 header {
   background-color: rgb(11, 14, 14);
-  height: 70px;
+  height: 78px;
 }
 
 header h3 {
@@ -31,26 +31,38 @@ ul li {
 }
 
 a {
-  color: red;
+  color: rgb(245, 22, 22);
   text-decoration: none;
   font-size: 20px;
   font-weight: 26px;
 }
 
 a:hover {
-  color: rgb(158, 9, 9);
+  color: rgb(226, 160, 177);
 }
 
 h2 {
-  color: rgba(255, 255, 255, 0.678);
-  font-size: 60px;
+  color: white;
+  font-size: 54px;
   text-align: center;
 }
 
 h3 {
-  color: rgba(255, 255, 255, 0.678);
-  font-size: 36px;
+  color: white;
+  font-size: 32px;
   text-align: center;
+}
+
+.dicas strong {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  flex: auto;
+  margin-bottom: 60px;
+}
+
+.dicas img prg {
+  margin-bottom: 10px;
 }
 
 p {
@@ -62,34 +74,26 @@ p {
 }
 
 .começo img {
-  margin: 0 500px;
+  margin: 0 200px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .história img {
-  margin: 0 500px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contato img {
-  margin: 0 500px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .contato p {
   margin-top: 50px;
   text-align: center;
-}
-
-h6 {
-  margin-top: 118px;
-  margin-right: 16px;
-  color: rgb(11, 226, 241);
-  text-align: right;
-  text-decoration: underline;
 }
 
 footer {
@@ -108,4 +112,36 @@ footer h5 {
 footer span {
   color: rgb(7, 148, 101);
   text-decoration: underline;
+}
+
+@media screen and(max-width:740px) {
+  .começo img {
+    max-width: 100%;
+  }
+
+  .história img {
+    max-width: 100%;
+  }
+
+  .contato img {
+    margin: 0 400px;
+    max-width: 500px;
+    flex: center;
+  }
+}
+
+@media screen and(max-width:540px) {
+  .começo img {
+    max-width: 100%;
+  }
+
+  .história img {
+    max-width: 100%;
+  }
+
+  .contato img {
+    margin: 0 400px;
+    max-width: 500px;
+    flex: center;
+  }
 }
